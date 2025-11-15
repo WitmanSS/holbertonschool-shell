@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
+# Bu skript öz proses ID-sini (PID) çap edir.
+
 echo $$
