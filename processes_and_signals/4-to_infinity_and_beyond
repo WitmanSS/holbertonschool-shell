@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Bu skript sonsuz döngüdə 'To infinity and beyond' yazısını çap edir və 2 saniyə gözləyir.
+
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+done

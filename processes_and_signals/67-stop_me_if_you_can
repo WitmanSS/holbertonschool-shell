@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Bu skript '7-highlander' prosesini pkill istifadə edərək dayandırır.
+
+# 6-stop_me_if_you_can skriptinin kopyası olaraq, hədəfi dəyişdirin.
+pkill -f "7-highlander"

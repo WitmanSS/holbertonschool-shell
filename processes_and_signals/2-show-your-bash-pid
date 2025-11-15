@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Bu skript ps auxf çıxışından yalnız bash proseslərini süzgəcdən keçirir.
+# shellcheck disable=SC2009
+
+ps auxf | grep bash

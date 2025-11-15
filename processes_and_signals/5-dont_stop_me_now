@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Bu skript '4-to_infinity_and_beyond' adlı prosesi kill (SIGTERM) siqnalı ilə dayandırır.
+
+# 'pgrep' ilə prosesin PID-sini tapın
+PID=$(pgrep -f "4-to_infinity_and_beyond")
+
+# Kill komandasını icra edin
+kill "$PID"

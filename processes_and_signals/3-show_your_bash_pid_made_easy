@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Bu skript 'bash' sözünü ehtiva edən proseslərin PID-sini və adını göstərir.
+
+pgrep -l bash

@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# PID faylı yaradır, sonsuz döngüdə çap edir və müxtəlif siqnalları idarə edir.
+
+PID_FILE="/var/run/myscript.pid"
+
+# --- Təmizləmə Funksiyası ---
+cleanup() {
+    echo "Təmizləmə əməliyyatı: $PID_FILE silinir."
+    rm -f "$PID_FILE"
+    exit 0
+}
+
+# --- Siqnal İdarəetməsi ---
+# SIGTERM (15) və SIGQUIT (3) alındıqda təmizlə və çıx.
+trap 'echo "I hate the kill command"; cleanup' SIGTERM
+trap 'echo "Y U no love me?!"; exit 0' SIGINT
+trap cleanup SIGQUIT
+
+# --- Prosesin başlanması ---
+# PID faylını yarat
+echo $$ > "$PID_FILE"
+
+# --- Əsas Döngü ---
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+done

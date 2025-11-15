@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Bu skript '7-highlander' prosesini məcburi şəkildə (SIGKILL) öldürür.
+
+# SIGTERM (default) görməzlikdən gəlindiyi üçün, SIGKILL (Siqnal 9) istifadə edilməlidir.
+pkill -9 -f "7-highlander"

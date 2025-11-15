@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Bu skript '4-to_infinity_and_beyond' prosesini pkill istifadə edərək dayandırır.
+
+# Pkill komandası kill/killall istifadə etmədən proses adını tapıb dayandırır.
+pkill -f "4-to_infinity_and_beyond"
