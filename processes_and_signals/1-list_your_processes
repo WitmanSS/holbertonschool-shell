@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Bu skript bütün proseslərin (bütün istifadəçilər və TTY olmayanlar daxil)
+# istifadəçi üçün oxunaqlı, ağacvari siyahısını göstərir.
+
+ps axjf
